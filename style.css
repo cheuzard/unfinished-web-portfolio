@@ -12,9 +12,7 @@
 
 
 
-.nav-bar-ul {
-  list-style-type: none;
-}
+
 body{
   font-family: "noto sans", sans-serif;
   background-color: var(--ivory);
@@ -41,6 +39,7 @@ header {
   font-weight: bolder;
 }
 .nav-bar, .nav-bar-ul {
+  list-style-type: none;
   display: flex;
   justify-content: center;
   align-items: baseline;
@@ -68,19 +67,27 @@ h1 {
   text-decoration: underline;
   padding-bottom: 2ch;
 }
+.box, .main-box{
+  box-shadow: -34px 30px 50px 0px #425d6b;
+}
+
 .box{
   display: flex;
   justify-content: start;
   align-items: center;
   flex-direction: column;
-  border-radius: 30px;
   padding: 3%;
+  aspect-ratio: 1 / 1;
+  width:  calc(50% - 18px);
+  box-sizing: border-box;
+  background-color: var(--indigo-dye);
+  border: 10px solid var(--charcoal);
+  border-color: var(--charcoal);
+  border-radius: 30px;
 }
-.box, .main-box{
-  box-shadow: -34px 30px 50px 0px #425d6b;
-}
-
 .main-box{
+  display: flex;
+  flex-direction: column;
   flex: 1;
   min-width: 30ch;
   max-width: 50ch;
@@ -92,16 +99,10 @@ h1 {
   flex-wrap: wrap;
   width: 936px;
   height: fit-content;
-  
   gap: 60px 36px;
 }
-.box{
-  aspect-ratio: 1 / 1;
-  width:  calc(50% - 18px);
-}
-.main-box{
-  display: flex;
-  flex-direction: column;
+.upper, .lower {
+  padding: 4ch;
 }
 .upper{
   border-top-left-radius: 30px;
@@ -116,15 +117,7 @@ h1 {
   background-color: var(--charcoal);
   color: var(--ivory);
 }
-.upper, .lower {
-  padding: 4ch;
-}
-.box {
-  box-sizing: border-box;
-  background-color: var(--indigo-dye);
-  border: 10px solid var(--charcoal);
-  border-color: var(--charcoal);
-}
+
 .phone, .mail {
   color: black;
 }
