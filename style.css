@@ -81,7 +81,8 @@ h1 {
   width:  calc(50% - 18px);
   min-width: 40ch;
   box-sizing: border-box;
-  background-color: var(--indigo-dye);
+  background-color: #3b6086;
+  /* var(--indigo-dye) */
   border: 10px solid var(--charcoal);
   border-color: var(--charcoal);
   border-radius: 30px;
